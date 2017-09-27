@@ -57,6 +57,9 @@
     </config-file>
     
     <source-file src="src/android/com/plugin/gcm/OneSignalPush.java" target-dir="src/com/plugin/gcm/" />
+
+    <hook type="before_compile" src="src/android/hooks/prepare_drawables.js"/>
+
   </platform>
   
   <!-- ios -->
