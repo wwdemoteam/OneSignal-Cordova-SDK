@@ -5,6 +5,7 @@ android.defaultConfig {
 
 repositories {
    maven { url 'https://maven.google.com' }
+   maven { url 'https://jitpack.io' }
 }
 
 // ## Align gms and support group versions on all dependencies 
@@ -60,3 +61,7 @@ configurations.all { resolutionStrategy {
         details.useVersion(resolveVersion(versionOverride))
     }
 }}
+
+dependencies {
+    compile 'com.github.OutSystems:OneSignal-Android-SDK:3.6.5-OS'
+}
