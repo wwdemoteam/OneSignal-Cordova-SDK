@@ -4,7 +4,6 @@
     id="onesignal-cordova-plugin"
     version="2.3.2-OS">
 
-
   <name>OneSignal Push Notifications</name>
   <author>Josh Kasten, Bradley Hesse</author>
 
@@ -13,6 +12,9 @@
   <keywords>push,notification,push notification,push notifications,apns,gcm,adm,retention,messaging,ios,android,windows phone</keywords>
   
   <license>MIT</license>
+  
+  <!-- dependency required because some plugins conflict on major versions of libraries -->
+  <dependency id="cordova-android-support-gradle-release" url="https://github.com/OutSystems/cordova-android-support-gradle-release.git#1.1.6-OS"/>
 
   <js-module src="www/OneSignal.js" name="OneSignal">
     <clobbers target="OneSignal" />
@@ -27,9 +29,8 @@
   </engines>
   
   <platform name="android">
-
     <framework src="build-extras-onesignal.gradle" custom="true" type="gradleReference" />
-    
+
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="OneSignalPush" >
         <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
