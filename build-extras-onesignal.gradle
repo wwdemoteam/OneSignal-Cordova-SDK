@@ -65,5 +65,5 @@ configurations.all { resolutionStrategy {
 }}
 
 dependencies {
-    compile 'com.github.usernuno:OneSignal-Android-SDK:3.10.3-OS'
+    compile 'com.github.OutSystems:OneSignal-Android-SDK:3.10.3-OS'
 }
