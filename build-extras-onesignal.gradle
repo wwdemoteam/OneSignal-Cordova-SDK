@@ -1,6 +1,8 @@
 android.defaultConfig {
-   manifestPlaceholders = [onesignal_app_id: '', // Use from js code
-                          onesignal_google_project_number: 'REMOTE']
+  manifestPlaceholders = [
+    onesignal_app_id: '', // Use from js code
+    onesignal_google_project_number: 'REMOTE'
+  ]
 }
 
 repositories {
@@ -63,5 +65,5 @@ configurations.all { resolutionStrategy {
 }}
 
 dependencies {
-    compile 'com.github.OutSystems:OneSignal-Android-SDK:3.8.2-OS2'
+    compile 'com.github.OutSystems:OneSignal-Android-SDK:3.10.3-OS'
 }
