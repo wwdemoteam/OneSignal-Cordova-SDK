@@ -1,4 +1,4 @@
-var ICON_FILENAME = 'ic_launcher.png';
+var ICON_FILENAME = 'icon.png';
 var RES_PATH = 'platforms/android/res/';
 
 var map_folders = [
