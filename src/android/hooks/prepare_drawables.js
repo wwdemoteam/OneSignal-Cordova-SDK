@@ -44,12 +44,12 @@ module.exports = function (ctx) {
 
   var engines = appConfig.getEngines();
 
-  if(engines.length < 0){
+  if(engines.length <= 0){
     return;
   }
 
   // Matches first digit (eg. ^8.0.0 returns 8) 
-  var engineMajor = engines[0].spec.match(/\d/)[0];
+  var engineMajor = engines[0].spec.match(/\d+[^.]/)[0];
 
   // If hook is running on project with cordova-android higher or equal than 8, redefine global variables
   if(Number(engineMajor) >= 8){
