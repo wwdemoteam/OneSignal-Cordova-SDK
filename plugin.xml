@@ -14,9 +14,6 @@
   
   <license>MIT</license>
   
-  <!-- dependency required because some plugins conflict on major versions of libraries -->
-  <dependency id="cordova-android-support-gradle-release" url="https://github.com/OutSystems/cordova-android-support-gradle-release.git#1.1.6-OS"/>
-
   <js-module src="www/OneSignal.js" name="OneSignal">
     <clobbers target="OneSignal" />
   </js-module>
