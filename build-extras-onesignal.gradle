@@ -15,7 +15,8 @@ repositories {
 def versionGroupAligns = [
     // ### Google Play Services library
     'com.google.android.gms': [
-        'version': '11.8.+'
+        'version': '11.8.+',
+		    'omitModules': ['strict-version-matcher-plugin']
     ],
 
     // ### Google Firebase library
